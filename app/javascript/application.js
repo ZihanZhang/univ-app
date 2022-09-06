@@ -2,7 +2,8 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 
-
 $(document).on('turbo:load', function() {
   $(".dropdown-trigger").dropdown();
-})
+  $('.sidenav').sidenav();
+  $('#fade-out-target').fadeOut(4000);
+});
